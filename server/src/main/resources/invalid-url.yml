@@ -1,0 +1,20 @@
+#
+# These are the addresses that are allowed to call
+# the blocked URL's directly.
+#
+# Make sure to start the address with "/".
+addresses:
+  - def:
+      ip6: /0:0:0:0:0:0:0
+  - def:
+      ip4: /0.0.0.0
+  - def:
+      ip4: /127.0.0.1
+
+
+#
+# These are the URL's that are to be blocked.
+#
+# If a class_name && refex_url are defined, then
+# the URL will be allowed through per the defined 'addresses' object.
+#

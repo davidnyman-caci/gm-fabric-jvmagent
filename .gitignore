@@ -1,0 +1,16 @@
+*.tar.gz
+*.tgz
+*.gz
+.cache-*
+.cache
+target/
+.idea
+*.iml
+.project
+.classpath
+.settings
+.DS_Store
+*-dont-track*
+licenses/
+.ensime
+.ensime_cache/
