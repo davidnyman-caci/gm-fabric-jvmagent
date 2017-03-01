@@ -73,3 +73,7 @@ The agent will attempt to decrypt passwords defined in the route configuration u
 ### Testing a running agent
 
 Out of the box, `http://localhost:8888/ping` is a good test- note that such a request requires a `user_d` header with value conforming to a dn in the whitelist.
+
+## Contributors
+
+-  Jeff Hemminger <jeff.hemminger@deciphernow.com>
