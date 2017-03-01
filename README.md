@@ -69,3 +69,7 @@ This does not exist by default but is required to do anything meaningful. Exampl
 To make a two-way SSL request from the agent to a route endpoint, passwords for the key and trust stores will need to be added to the configuration.
 It is prudent to encrypt these passwords, and the agent can decrypt them using a custom. Details for implementing a decryptor can be [found here](https://github.com/DecipherNow/gm-fabric-jvm/blob/master/documentation/ResourceDecrypter.md).
 The agent will attempt to decrypt passwords defined in the route configuration using the defined decryptor, if defined.
+
+### Testing a running agent
+
+Out of the box, `http://localhost:8888/ping` is a good test- note that such a request requires a `user_d` header with value conforming to a dn in the whitelist.
