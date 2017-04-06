@@ -83,9 +83,9 @@ object HttpClientFactory {
       new Engine(mkClient(
         createSslContext(
           f1,
-          route.sslConfig.keyStorePass,
+          route.sslConfig.decryptedKeyStorePass,
           f2,
-          route.sslConfig.trustStorePass)))
+          route.sslConfig.decryptedTrustStorePass)))
     ))).newClient(route.addresses, route.routeId).toService
 
   }
