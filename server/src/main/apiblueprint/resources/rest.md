@@ -22,15 +22,15 @@ FORMAT: 1A
 
 ### <a name="everything"></a> `/:*` - HEAD/GET/DELETE/PUT/POST redirect based on the route
 
-### <a name="reload"></a> `/reloadConfig` - Reload the configuration file, optionally expunging the cache.
+### <a name="reload"></a> `/reloadRoute` - Reload the configuration file, optionally expunging the cache.
 
  There are two parameters available:
 
  1 - `configPath` = a full path to a configuration file to load
- (`http://agent/reloadConfig?configPath=/path/to/new/config.conf`)
+ (`http://agent/reloadRoute?configPath=/path/to/new/config.conf`)
 
  2 - `invalidateCache` = a boolean option to expunge the cache or not. Default is false.
-(`http://agent/reloadConfig?invalidateCache=true`)
+(`http://agent/reloadRoute?invalidateCache=true`)
 
 ## See Also
 

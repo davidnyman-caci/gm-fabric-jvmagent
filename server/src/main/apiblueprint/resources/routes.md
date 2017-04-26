@@ -296,7 +296,7 @@ $> export keystore.keyStorePassword=newPassword
 ```
 
 will override the configuration password. Activating the change requires reloading the configuration
-via the API (`http://agent/reloadConfig`)
+via the API (`http://agent/reloadRoute`)
 
 *Note* While environment overrides may seem extremely useful, in practice it's complicated by the the fact that 
 routes are defined in an array.
@@ -306,7 +306,7 @@ However this is not published, supported behavior.
 
 2 - modifying the existing configuration file
 
-Making a change to the existing configuration file and then calling `/reloadConfig` will trigger
+Making a change to the existing configuration file and then calling `/reloadRoute` will trigger
 the agent server to reload the existing configuration, picking up any changes.
 
 3 - providing a new configuration file
@@ -336,7 +336,7 @@ configurations in the classpath.
 *Note 2* - Invalidating cache
 
 The configuration library has some internal caches and may not see new values for system properties. 
-Use `http://agent/reloadConfig?invalidateCache=true` to reload the configuration and reevaluate the cache.
+Use `http://agent/reloadRoute?invalidateCache=true` to reload the configuration and reevaluate the cache.
 
 ## See Also
 
